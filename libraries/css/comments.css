@@ -1,0 +1,55 @@
+.comment {
+  width: 80%;
+  height: auto;
+  background-color: var(--lightGrey);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.commentTitle {
+  padding: 10px;
+}
+.commentForm form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.commentForm textarea {
+  margin-bottom: 20px;
+  width: 90%;
+  align-self: center;
+  resize: vertical;
+}
+.commentForm {
+  text-align: center;
+}
+.commentForm input {
+  width: 100px;
+  background-color: var(--blue);
+  border-radius: 10px;
+  transform: translateX(50%);
+}
+.commentResult {
+  max-height: 51vh;
+  overflow-y: scroll;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--darkGrey);
+}
+.commentSolo {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+.commentDelete {
+  width: 100%;
+  text-align: end;
+  color: red;
+  text-decoration: none;
+}
+.commentDelete a {
+  color: red;
+}

@@ -1,0 +1,859 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: ; */
+}
+
+* {
+  box-sizing: border-box;
+  /* border: solid red 2px; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+h2,
+p {
+  text-align: center;
+  color: black;
+}
+a {
+  /* height: 100%; */
+  display: flex;
+  /* flex-direction: flex-end; */
+  justify-content: space-around;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  /* border: solid red 2px; */
+  align-items: center;
+  background-color: #f2ebe5;
+  box-shadow: 5px 5px 10px black;
+}
+.home img {
+  width: 35px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  box-shadow: 5px 5px 10px black;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: #f2ebe5;
+  margin-top: 2%;
+}
+title {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+/*   */
+.containerArticle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid red 2px; */
+
+  border-radius: 10px;
+  margin: 2%;
+  /* box-shadow: 5px 5px 10px black; */
+}
+.article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid red 2px; */
+  padding: 5%;
+  width: 80%;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  background-color: #f2ebe5;
+  overflow: hidden;
+}
+.articleTitle,
+.articleContent,
+.articleButton {
+  width: 100%;
+}
+.articleButton,
+.articleButton2,
+.articleButton3 {
+  margin-top: 1%;
+}
+.articleTitle,
+.articleContent {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 2vw;
+}
+.articleTitle {
+  height: 30%;
+  border-bottom: solid black 2px;
+}
+.articleShowUpdate {
+  width: 50%;
+  padding: 5px 10% 5px;
+}
+.articleDelete {
+  width: 50%;
+  text-align: end;
+  padding: 5px 66px 5px;
+}
+.articleDelete a {
+  color: red;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #2b262d;
+}
+.articleContent {
+  overflow: hidden;
+}
+.min {
+  height: 17%;
+}
+.max {
+  height: 48%;
+}
+.articleBtn {
+  position: relative;
+  justify-content: center;
+}
+/* .articlePhoto {
+  width: 100%;
+} */
+.articlePhoto img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.articleSolo {
+  /* width: 80%;
+  background-color: white;
+  transition: background-color 0.5s;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden; */
+  width: 100%;
+  margin: auto;
+  background-color: #f2ebe5;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 5px 5px 10px black;
+  text-align: center;
+  margin: 2% 0;
+}
+.articleSoloTitle,
+.articleSoloContent {
+  border-bottom: solid black 2px;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+.articleSoloPhoto img {
+  object-fit: cover;
+  object-position: bottom;
+  /* width: 100%;
+  height: 20%; */
+}
+.articleSoloLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.articleSoloUpdate {
+  width: 50%;
+  padding: 0 0 0 42px;
+}
+.articleSoloDelete {
+  width: 50%;
+  text-align: end;
+  padding: 0 42px 0 0;
+}
+.articleSoloDelete a {
+  color: red;
+}
+.article:hover,
+.articleSolo:hover {
+  background-color: #fffffa;
+  transition: background-color 0.5s;
+  color: #000000;
+}
+.articleUpdateHeader {
+  width: 100%;
+  margin: auto;
+  background-color: #f2ebe5;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 5px 5px 10px black;
+  text-align: center;
+  margin: 2% 0;
+}
+.articleUpdate {
+  width: 90%;
+  margin: 5%;
+  background-color: #f2ebe5;
+  /* margin-bottom: 5%; */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+}
+.articleUpdateTitle,
+.articleUpdateContent {
+  border-bottom: solid black 2px;
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+}
+.articleUpdateTitle textarea,
+.articleUpdateContent textarea {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+.articleUpdatePhoto img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 90%;
+  height: 100%;
+  margin: 5%;
+}
+.articleUpdateFileButton {
+  display: flex;
+  padding: 0 0 0 42px;
+  margin: 1%;
+}
+.articleUpdateSubmitButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+.articleUpdateFile {
+  margin: 0 2% 0 0;
+}
+.articleUpdateFile,
+.articleUpdatePhotoDel,
+.articleUpdateSubmit {
+  border-radius: 10px;
+}
+.articleCreate {
+  width: 80%;
+  background-color: #f2ebe5;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.articleCreateTitle {
+  text-align: center;
+  width: 100%;
+}
+.articleCreateForm {
+  width: 80%;
+}
+.articleCreateForm form {
+  display: flex;
+  flex-direction: column;
+  border-top: solid black 2px;
+  padding-top: 20px;
+}
+.articleCreatePhoto,
+.articleSubmitButton {
+  margin: 2% 0 0 0;
+}
+.articleSubmitButton {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 200px;
+}
+.articlePhotoAdd,
+.articlePhotoDel {
+  border-radius: 10px;
+  margin: 0 2% 0 0;
+}
+.articleCreateMessage {
+  padding: 2% 0 0;
+  width: 100%;
+  text-align: center;
+}
+.articleSubmit,
+.articleShow {
+  border-radius: 10px;
+  background-color: #647295;
+  margin: 2%;
+}
+.articleCreateForm textarea {
+  padding: 1% 2%;
+  border-radius: 10px;
+  width: 100%;
+}
+#articleFile {
+  display: none;
+}
+.preview {
+  background-color: #f2ebe5;
+  width: 80%;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 5px 5px 10px black;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.articlePreview {
+  /* display: flex; */
+  width: 90%;
+  margin: 5%;
+  background-color: #f2ebe5;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+  margin: auto;
+  /* justify-content: center; */
+}
+.articlePreviewPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.articlePreviewPhoto img {
+  margin-top: 5%;
+  object-fit: cover;
+  object-position: bottom;
+  width: 50%;
+  height: 50%;
+}
+.articlePreviewTitle {
+  border-bottom: solid black 2px;
+}
+.articlePreviewTitle,
+.articlePreviewContent {
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Users */
+
+.profilBtnTitle {
+  text-align: center;
+}
+.profilBtnPhoto {
+  width: 50%;
+}
+.profilBtnPhoto img {
+  object-fit: cover;
+  image-rendering: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.inscription {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2ebe5;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.inscriptionTitle {
+  text-align: center;
+  padding: 5% 0 0;
+  border-bottom: solid black 2px;
+  width: 90%;
+  align-self: center;
+}
+.inscriptionForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inscriptionForm form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inscriptionPseudo {
+  width: 100%;
+  padding: 2.5% 0 1% 10%;
+}
+.inscriptionMesage {
+  width: 100%;
+  padding: 1% 0 1% 0;
+}
+.inscriptionPrenom,
+.inscriptionNom,
+.inscriptionEmail,
+.inscriptionEmail2,
+.inscriptionPasswd,
+.inscriptionPasswd2 {
+  width: 50%;
+  padding: 1% 0 1% 10%;
+}
+.inscriptionPseudo input {
+  width: 250px;
+  border-radius: 10px;
+  padding: 0.5% 2.5%;
+}
+/* .inscriptionFirstName input,
+.inscriptionLastName input, */
+.inscriptionEmail input,
+.inscriptionEmail2 input,
+.inscriptionPasswd input,
+.inscriptionPasswd2 input {
+  width: 250px;
+  border-radius: 10px;
+  padding: 1% 5%;
+  margin: 1%;
+}
+.inscriptionMessage {
+  width: 100%;
+  text-align: center;
+  cursor: default;
+}
+.inscriptionRedirect {
+  text-align: center;
+  padding: 0 0 2.5%;
+}
+.inscriptionRedirect a {
+  color: #647295;
+}
+.inscriptionSubmit {
+  width: 100%;
+  padding: 0 0 2%;
+  text-align: center;
+}
+.inscriptionSubmit input {
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.inscriptionSubmitBtn {
+  background-color: #647295;
+}
+.connexion {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2ebe5;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  padding: 2% 0;
+}
+.connexionTitle {
+  text-align: center;
+  padding: 0 0 5%;
+  border-bottom: solid black 2px;
+  width: 90%;
+  align-self: center;
+}
+.connexionForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connexionForm form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-pseudo,
+.form-psw,
+.connectsubmit {
+  display: flex;
+  justify-content: center;
+}
+
+.connexionPseudo,
+.connexionPasswd {
+  text-align: center;
+  padding: 2.5% 0;
+}
+.connexionMessage {
+  width: 100%;
+  padding: 2.5% 0 0 0%;
+}
+.connexionRedirect {
+  text-align: center;
+  padding: 0 0 2.5%;
+}
+.connexionRedirect a {
+  color: #647295;
+}
+.connexionPseudo input,
+.connexionPasswd input {
+  width: 250px;
+  border-radius: 10px;
+  padding: 1% 5%;
+}
+.connexionMessage {
+  text-align: center;
+  cursor: default;
+}
+.connexionSubmit {
+  width: 100%;
+  padding: 0 0 2%;
+  text-align: center;
+}
+.connexionSubmit input {
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.connexionSubmitBtn {
+  background-color: #647295;
+}
+.profil {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f2ebe5;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  padding: 2% 2%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.profil input[type="submit"] {
+  border-radius: 10px;
+  background-color: #647295;
+}
+.profilTitle {
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+.profilInfo {
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+.profilInfo form {
+  display: flex;
+  flex-direction: row;
+}
+.profilPhotoResult {
+  width: 180px;
+  height: 180px;
+  border: solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profilAvatar {
+  object-fit: cover;
+  object-position: center;
+  image-rendering: auto;
+  width: 100%;
+  height: 100%;
+}
+.profilPhoto {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 0;
+}
+.profilPhoto input[type="file"] {
+  display: none;
+}
+.profilFileBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  text-align: center;
+  transform: translateY(-100%);
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.5s;
+}
+.profilFileBtn:hover {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s;
+}
+.profilFileBtn img {
+  width: 90%;
+  cursor: pointer;
+}
+.profilFormInfo {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5% 0 0;
+}
+.profilFormPseudo,
+.profilFormEmail,
+.profilFormFirstname,
+.profilFormLastname {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 35%;
+}
+.profilPasswd1,
+.profilPasswd2,
+.profilPasswd3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  padding: 2% 0 0;
+}
+.profilFormPseudo input,
+.profilFormEmail input,
+.profilFormFirstname input,
+.profilFormLastname input,
+.profilPasswd1 input,
+.profilPasswd2 input,
+.profilPasswd3 input {
+  border-radius: 10px;
+  padding: 2% 5%;
+}
+.profilPasswd1 input,
+.profilPasswd2 input,
+.profilPasswd3 input {
+  width: 85%;
+}
+.profilFormSubmit {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 5%;
+}
+.profilFormSubmit p,
+.profilPasswdSubmit p {
+  cursor: default;
+}
+.profilFormPasswd {
+  width: 100%;
+}
+.profilFormPasswd form {
+  display: flex;
+  flex-direction: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.profilPasswdSubmit {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.deleteUser {
+  width: 100%;
+  height: 0;
+  text-align: end;
+  transform: translateY(-200%);
+  padding: 0 0 1%;
+  margin: 5%;
+}
+.deleteUser a {
+  color: red;
+}
+.usersList {
+  width: 80%;
+  background-color: #f2ebe5;
+  border-radius: 10px;
+  padding: 2% 0;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.usersAddBtn {
+  margin: 0 0 20px;
+}
+.usersListTitle {
+  width: 100%;
+  text-align: center;
+}
+.usersListTable {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 534px;
+  overflow-y: scroll;
+}
+.usersListTable table {
+  width: 90%;
+  border: solid black 2px;
+}
+.usersListTable th,
+.usersListTable td {
+  background-color: white;
+  border: solid black 1px;
+}
+.usersList Table input {
+  width: 20px;
+  min-width: 10%;
+  text-align: center;
+}
+.greenLink {
+  color: green;
+}
+.redLink {
+  color: red;
+}
+table,
+th,
+td {
+  border: solid black 1px;
+  text-align: center;
+  padding: 2% 0;
+}
+.userForm {
+  width: 90%;
+  max-width: calc(100% - 55px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f2ebe5;
+  margin: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.userFormTitle {
+  padding: 2% 0;
+  width: 90%;
+  text-align: center;
+  border-bottom: solid black;
+}
+.userFormBody {
+  width: 90%;
+}
+.userFormBody form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.userFormBody form input,
+.userFormRole select {
+  width: 200px;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+.userFormPseudo,
+.userFormEmail,
+.userFormFirstname,
+.userFormLastname,
+.userFormRole {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+}
+.userFormPseudo,
+.userFormEmail,
+.userFormFirstname,
+.userFormLastname {
+  width: 50%;
+  align-items: center;
+}
+.userFormRole {
+  width: 35%;
+  align-items: center;
+}
+.userFormMessage {
+  width: 100%;
+  align-items: center;
+}
+.userFormMessage {
+  text-align: center;
+}
+.userFormSubmit {
+  margin-bottom: 3%;
+}
+.inscriptionList {
+  width: 800px;
+  max-width: calc(100% - 55px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f2ebe5;
+  margin: auto;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.inscriptionListTitle {
+  padding: 2% 0;
+  width: 90%;
+  text-align: center;
+  border-bottom: solid black;
+}
+.inscriptionListForm {
+  width: 90%;
+}
+.inscriptionListForm form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.inscriptionListForm form input,
+.inscriptionListForm form select {
+  width: 200px;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+.inscriptionListForm form div {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.inscriptionListFormMessage,
+.inscriptionListFormSubmit {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
