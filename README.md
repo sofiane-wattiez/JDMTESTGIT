@@ -8,4 +8,5 @@ If you want used this template import SQL files.
 The admin account is this on this SQL
 Pseudo = admin
 Password = testtt 
+
 Password is programming for need 6 charachteres actually on this template.
