@@ -1,7 +1,7 @@
 # JDMTESTGIT
 It's blog for sharing memes création.
 
-I coding all in this with PHP  (POO) and MVC architechture.
+I coding this website with PHP (POO) and MVC architechture.
 
 If you want used this template import SQL files.
 
