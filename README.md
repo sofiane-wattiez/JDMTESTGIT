@@ -9,4 +9,4 @@ The admin account is this on this SQL
 Pseudo = admin
 Password = testtt 
 
-Password is programming for need 6 charachteres actually on this template.
+Password is programming for need 6 charachters actually on this template.
