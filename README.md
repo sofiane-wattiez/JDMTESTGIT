@@ -1,11 +1,16 @@
 # JDMTESTGIT
-It's blog for sharing memes création.
 
-I coding this website with PHP (POO) and MVC architechture.
+*My First Project With OOP - Created on 2020* 
+
+
+## It's blog for sharing memes création.
+
+I coding this website with PHP (OOP) and MVC architechture.
 
 If you want used this template import SQL files.
 
-The admin account is this on this SQL
+# Admin info for test 
+
 Pseudo = admin
 Password = testtt 
 
