@@ -11,7 +11,8 @@ If you want used this template import SQL files.
 
 # Admin info for test 
 
-Pseudo = admin
-Password = testtt 
+*Pseudo = admin*
+
+*Password = testtt* 
 
 Password is programming for need 6 charachters actually on this template.
